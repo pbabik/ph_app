@@ -28,6 +28,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
         <!--<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
         <!--<link rel="stylesheet" type="text/css" href="css/materialize.css" />-->
         <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
         <meta http-equiv="Content-Security-Policy" content="
@@ -40,19 +41,10 @@
     </head>
     <body>
         <div id="map">
+        <img src="http://a.tile.openstreetmap.org/13/4489/2804.png">
         </div>
-        <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
-
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([51.5, -0.09]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            .openPopup();
-
-        </script>
+        <div id="div2"></div>
+        <div id="info"></div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
