@@ -109,7 +109,13 @@ body {
 html, body {
     height: 100%;
 }
+#info {
+    height: 60px;
+}
+#maprow {
+    height: 100%;
+}
 #map {
-    height: calc(100% - 70px);
+    height: 100%;
     width: 100%;
 }
