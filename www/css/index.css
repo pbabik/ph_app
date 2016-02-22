@@ -106,10 +106,10 @@ body {
     padding: 0;
     margin: 0;
 }
-html, body, #map {
+html, body {
     height: 100%;
 }
 #map {
     height: 356px;
-    width: 100%;
+    width: 256px;
 }
